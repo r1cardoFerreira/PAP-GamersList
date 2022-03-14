@@ -1,0 +1,490 @@
+body {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Bahnschrift";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* limpa o fluxo da página, para que as colunas nao saiam do sítio*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Todas essas colunas devem estar a flutuar para a esquerda e ter um padding de 15px */
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    border: 1px;
+}
+    
+/* para mobile first */
+[class*="col-"]{
+    width: 100%;
+}
+@media all and (max-width: 768px) {
+    .top {position: relative;; }
+  }
+
+ 
+/* ISTO AGORA VEM AQUI, PARA TABLETS, REPARE NO col-s- */
+@media only screen and (min-width: 600px) {
+    .col-s-0{width: 0%;}
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33%;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;}
+}
+
+/* ISTO É PARA ELIMINAR, VAI ENTRAR DE OUTRO MODO A SEGUIR ELIMINAR @media only screen and (max-width: 768px){ */
+/* PARA DESKTOP AGORA ENTRA ASSIM, COM LARGURA MÍNIMA E NÃO MÁXIMA */
+/* Divisão em 12 colunas, com 8,33% cada */
+@media only screen and (min-width: 768px){
+    .col-0{width: 0%;}
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+  
+/* é para eliminar
+/* INTRODUÇÃO DE UM BREAKPOINTS NO LAYOUT RESPONSIVO */
+@media only screen and (max-width: 768px){
+    /* para mobile phones */
+    [class*="col-"]{
+        width: 100%;
+    }
+} 
+@media all and (max-width: 768px) {
+    .mydiv { display: none; }
+  }
+  @media all and (max-width: 600px) {
+    .formrespon { padding-bottom: 65%; height: 100%;border: none;}
+    
+    .tam{height:30 em; }
+    .background-jogos{font-size: 12px;}
+  }
+ 
+/* estilo para o aspecto visual da página */
+body{
+    font-family: "Bahnschrift";
+}
+.responsivo {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      margin-right: 10px;
+   }
+
+.subtitle{
+    color:  #914ac7;
+    font-size: 20px;
+}
+/*estilos centralizados*/
+.centrado{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+/*Padding*/
+.pd{
+    padding-top: 6em;
+}
+/*Form-center*/
+.form-center{
+    vertical-align: middle;
+    align-content: center;
+}
+/* estilo para a navbar */
+.topnav {
+  overflow: hidden;
+  padding: 15px;
+  font-family: "Bahnschrift";
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 0.5px solid;
+  border-color: navy;
+  width: 100%;
+}
+/* estilo para as palavras na nav bar */
+/*.topnav a {
+  float: left;
+  display: block;
+  color: navy;
+  text-align: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 24px;
+}*/
+.logo {
+  float: left;
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nvtext{
+    float: left;
+    display: block;
+    color: navy;
+    text-align: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.nvtext:hover{
+    /*background-color: navy;*/
+    color: lightblue;    
+    font-family: "Bahnschrift";
+    border-radius: 20px;
+    border: #000, solid, 4px;
+}
+/* quando passa o rato por cima de algum menu */
+/*.topnav a:hover {
+  background-color: navy;
+  color: #FFFFFF;    
+  font-family: "Bahnschrift";
+  border-radius: 20px;
+  border: #000, solid, 4px;
+}*/
+.topnav .icon {
+  display: none;
+} 
+/*Estilo para o rodapé*/
+.footer{
+    background-color:#fff;
+    color: navy;
+    padding: 1px;
+    font-size: 16px;
+    font-family: "Bahnschrift";
+    bottom: 0px;
+    position: fixed;
+}
+.footer a{
+    color: navy;
+    padding: 15px;
+    text-decoration: none;
+}
+
+/*Parte dos jogos*/
+/*Imagens de jogos*/
+.gamesimg{
+    max-height:100%;
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    display: block;
+    border-radius: 3%;
+    border: 1px solid #fff;
+}
+/*Nome dos jogos*/
+.gamesname{
+    margin:0px 0px 0px 0px;
+    color: #333;
+    text-align: center;
+    font-family: "Bahnschrift";
+}
+/*Descrição dos jogos*/
+.gamesdesc{
+    font-size: 100%;
+    color: #333 ;
+    font-family: "Bahnschrift";
+    text-align: justify;
+    margin-top: 20%;
+}
+
+/*Categorias*/
+.gamescat{
+    font-size: 100%;
+    color: #333 ;
+    font-family: "Bahnschrift";
+    text-align: justify;
+}
+/*Ano de lançamento*/
+.gamesyr{
+    font-size: 100%;
+    color: #333 ;
+    font-family: "Bahnschrift";
+    text-align: justify;
+}
+/*Empresa desenvolvedora*/
+.empresa{
+    font-size: 100%;
+    color: #333 ;
+    font-family: "Bahnschrift";
+    text-align: justify;
+}
+/*Backgroud jogos*/
+.background-jogos{
+    background-color: rgba(250, 250, 250, 0.933);
+    color: #333;
+    height: 30em;
+    border: 5px solid white;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+.fontes{
+    font-family: "Bahnschrift";
+    border-radius:15px;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    width: 100%;
+    background-image:radial-gradient(red,#000);
+    
+}
+.text{
+    font-family: "Bahnschrift";
+    font-size: 23px;
+    margin-right: 0px;
+    padding: 0px;
+    text-align: l;
+}
+.imgsobre{
+    height: 370px;
+    float: right;
+    width: 100%;
+    border-radius: 10px;
+}
+/*Formulários*/
+.form-titulo{
+    font-size: 2em;
+    color: navy;
+    text-shadow: 15px,15px, black;
+    font-family: "Bahnschrift";
+}
+.form-subtitulo{
+    font-size: 2em;
+    color: navy;
+    text-shadow: 15px,15px,black;
+    font-family: "Bahnschrift";
+}
+.links{
+    text-decoration:none;
+    color: navy  ;
+}
+
+/*Botão*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: navy;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 100%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "Bahnschrift";
+    text-decoration: none;
+  }
+
+  .button2 {
+    border-radius: 4px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: navy;
+    border-width: 2px;
+    color: navy;
+    
+    font-size: 100%;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "Bahnschrift";
+    text-decoration: none;
+  }
+  .button-add{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: navy;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 70%;
+    padding: 7px;
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "Bahnschrift";
+    text-decoration: none;
+  }
+
+.nome-form{
+    width: 70%;
+    font-size: 1.5em;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: "Bahnschrift";
+    background-color: none;
+    -webkit-autofill: none;
+    text-align: center;
+}
+select{
+    font-size: 16px;
+}
+.import_img{
+    background-color: navy;
+    color:  white;
+}
+/*Formback*/
+.formback2{
+    width: 50%;
+    box-shadow:10px 10px 10px 10px  #888888 ;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+.border-div{
+    border-left:solid 40px;
+    border-color: #ca0000;
+    box-shadow: #270000;
+}
+/*Barra de pesquisa*/
+.barra-pesquisa{
+    border-radius: 25px;
+    border: 2px 2px 2px 2px;
+    border-color: navy;
+    width: 60%;
+    font-family: "Bahnschrift";
+    font-size: 28px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+.iconz {
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*Linhas*/
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 3px;
+    border-color: navy;
+    padding:0px;
+    width: 70%;
+}
+.tabela
+{
+    border: #000 2px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center; 
+    margin-right: auto;
+    margin-left: auto;
+}
+.tabela tr 
+{
+    border: #000 2px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center; 
+}
+.tabela td 
+{
+    border: #000 2px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center; 
+    font-size: 120%;
+    padding: 10px;
+}
+
+/*Noticias*/
+
+.background-noticias{
+    background-color: rgba(250, 250, 250, 0.933);
+    height: 40  em;
+    border: 5px solid white;
+    padding: 30px;
+    border-radius: 15px;
+}
+.noticiasdesc{
+    font-size: 100%;
+    color: #333 ;
+    font-family: "Bahnschrift";
+    text-align: justify;
+    margin-top: 20%;
+}
+.Noticiaimg{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin: auto;
+    display: block;
+    border-radius: 3%;
+    border: 1px solid #fff;
+    
+}
+.titulo{
+    color: navy;
+}
+/*Remover*/
+.buttonremove{
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 150%;
+    align:center;
+}
+
+/*BackGround editar perfil*/
+.fundo{
+    background-color: rgba(0, 0, 128, 0.46);
+    height: 100%;
+}
