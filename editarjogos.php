@@ -30,7 +30,7 @@ include 'menu.php';
       }
       ?>
       <div>
-      <table id="jogos" style="margin-top:50px">
+      <table id="jogos" style="margin-top:70px">
             <tr>
                   <th>Nome</th>
                   <th>Empresa</th>

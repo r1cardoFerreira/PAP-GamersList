@@ -15,21 +15,23 @@ $sql ="INSERT INTO listas VALUES ('$utilizador','$nome_jogo')";
 
 $src =mysqli_query($ligacao,$check);      
 
+print_r($sql);
+
+
 if($utilizador != null){
 if(isset($_POST['submit'])){
-      /*if($src = TRUE){
-            echo "<script>window.alert('O jogo Selecionado já foi adicionado á sua Lista');window.location.
-            href='HomePage.php</script>";
-            header("Location:Login.php");
-            exit;*/
-      //}else{
-            $result=mysqli_query($ligacao,$sql);
+      if(mysqli_num_rows($src) ==1){
+            echo "<script>
+                  alert('Jogo já adicionado!')window.location.href='HomePage.php
+            </script>";
+            header("Location:HomePage.php");
+      }else{
+          $result=mysqli_query($ligacao,$sql);
             header("Location:HomePage.php"); 
             exit;
-    //  }
-}
-}else{      
+}}}else{      
       echo "<script>alert('Sessão Não encontrada');window.location.
       href='HomePage.php</script>";
+      header("Location:Login.php    ");
 }
 ?>

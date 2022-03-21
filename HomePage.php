@@ -9,7 +9,7 @@
     <div class="col-12 pd">
         <center><form action="HomePage.php " method="get">
             
-            <input class="barra-pesquisa" type="text" name="pesquisa" autocomplete="off" placeholder="Pesquisa" value=""></div>
+            <input class="barra-pesquisa" type="search" name="pesquisa" autocomplete="off" placeholder="Pesquisa" value=""></div>
             </form></center>
      </div>
      <hr>  

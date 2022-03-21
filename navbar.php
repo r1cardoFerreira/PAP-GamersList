@@ -76,7 +76,7 @@ echo <<<_VISIT
 		<div class="topnav" id="Topnav">	
             <center> 
 				<a class="logo" href="HomePage.php"><img src="imagens/logotipo.png"></a>	
-				<a class="nvtext" href="Notícias.php">Noticias</a>
+				<a class="nvtext" href="Notícias.php">Notícias</a>
 				<a class="nvtext" href="Recomendados.php">Recomendados</a>
                 <a class="nvtext" href="Login.php">Entrar/Registar</a>  
                 <a href="javascript:void(0);" style="font-size:24px;outline:none;" class="icon" onclick="Menu_Mobile()">&#9776;</a>

@@ -16,24 +16,23 @@ $result =mysqli_query($ligacao,$query);
             <?php
             endwhile;?></select><br>
             
-            <input type="file"class="nome-form" name="fileUpload" value="" ><br><br>
-             <?php  
-            //print_r($_POST);?>
+            <input type="file"class="nome-form" name="fileUpload" ><br><br>
+             
             <button type="submit" class="button" name="submit" >Submeter</button>
       </form>
       </div>
       <?php 
-    $jogo ="";
-    $target_file = "";
-
-    $img = "./img_dir/$target_file";
+      $jogo ="";
+      $target_file ="";
+   
     if(!empty($_POST['nomejogo'])){
         $jogo = $_POST['nomejogo'];  
     }
     if(!empty($_POST['fileupload'])){
     $target_file = $_POST['fileupload'];  
     }
-            
+      $img = "./img_dir/$target_file";     
+
             if($target_file = "" && $jogo = "" || $jogo ==='Selecionar Jogo' ){}
             else{
             $sql="UPDATE jogos SET img = '$img' Where nome_jogo = '$jogo' ";

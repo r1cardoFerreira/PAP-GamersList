@@ -52,14 +52,13 @@
 <body>
       <div class="row"> 
 		<div class="topnav" id="Topnav">	
-            
-				<a class="logo"><img src="imagens/logotipo.png"></a>
+				<a class="logo"><img src="imagens/logotipo.png"></a>    
                         <a class="nvtext" href="adicionarjogos.php">Adicionar Jogos</a>
                         <a class="nvtext" href="adicionarimg.php">Adicionar imagens</a>	
 				        <a class="nvtext" href="eliminarjogos.php">Eliminar Jogos</a>
                         <a class="nvtext" href="editarjogos.php">Editar Jogos</a>
                         <a class="nvtext" href="adicionarempresa.php">Adicionar Empresas</a>
-                        <a class="nvtext" href="sair.php">Voltar à página Inicial</a>  
+                        <a class="nvtext" href="sair.php">Sair</a>  
                         <a href="javascript:void(0);" style="font-size:24px;outline:none;" class="icon" onclick="Menu_Mobile()">&#9776;</a>
         
 		</div>

@@ -366,6 +366,8 @@ select{
     text-align: center;
     margin-top: 10%;
     margin-left: 25%;
+    padding: 0;
+    margin-block-end: 0.6em;
 }
 
 .border-div{
@@ -455,21 +457,26 @@ hr {
     border-radius: 15px;
 }
 .noticiasdesc{
-    font-size: 100%;
+    font-size: 120%;
     color: #333 ;
     font-family: "Bahnschrift";
-    text-align: justify;
-    margin-top: 20%;
+    
 }
 .Noticiaimg{
     width: 40%;
     height: auto;
-    float: left;
     margin: auto;
     display: block;
     border-radius: 3%;
     border: 1px solid #fff;
-    
+}
+.Noticiaimg2{
+    width: 60%;
+    height: auto;
+    margin:auto;
+    display: block;
+    border-radius: 3%;
+    border: 1px solid #fff;
 }
 .titulo{
     color: navy;
@@ -480,11 +487,86 @@ hr {
     outline: none;
     border: none;
     font-size: 150%;
-    align:center;
 }
 
 /*BackGround editar perfil*/
 .fundo{
     background-color: rgba(0, 0, 128, 0.46);
     height: 100%;
+}
+/*Side Bar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#888888 ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top:70px
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: navy;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: lightblue;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+  /*Contacto*/
+  .contact-form{
+    width: 35%;
+    font-size: 1em;
+    padding: 10px;
+    font-family: "Bahnschrift"; 
+    text-align: left;
+    margin: 10px;
+    border: #000 2px solid;
+    border-radius: 4px;
+}
+.area{
+    padding: 10px;
+    width: 75%;
+    height: 30%;
+    font-family: "Bahnschrift";
+    font-size:1em ;
+    color:#111;
+    border: #000 2px solid;
+    border-radius: 4px;
+}
+.enviar{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: navy;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 100%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "Bahnschrift";
+    text-decoration: none;
+    width: 30%;
 }

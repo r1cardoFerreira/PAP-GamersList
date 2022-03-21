@@ -17,7 +17,7 @@ $result4=mysqli_query($ligacao,$query2);
 
 include "menu.php";
 ?>
-<div class="row col-12 formback2">
+<div class="row col-12 formback2"> 
       <form method="post" action="adicionarjogos.php" >
       <div class="input-icons">
             <input class="nome-form" type="text" name="nome" required autocomplete="off" maxlength="35" placeholder="Nome">

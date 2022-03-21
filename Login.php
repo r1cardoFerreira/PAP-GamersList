@@ -19,7 +19,7 @@ if(isset($_POST['login'])){
             $password =$_POST['password'];
             $_SESSION['nome'] = $nome;
             $_SESSION['password'] = $password;
-    $query ="SELECT * FROM utilizador WHERE nome_utilizador ='$nome' AND palavra_passe = '$password'";
+    $query ="SELECT * FROM utilizador WHERE nome_utilizador ='$nome' AND palavra_passe = '$password'";  
     $verifica = mysqli_query($connect,$query) or die("erro ao selecionar");
     if ($nome=="admin" && $password ="admin123") {
 
